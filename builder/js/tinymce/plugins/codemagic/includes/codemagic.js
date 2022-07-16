@@ -139,8 +139,7 @@ jQuery(document).ready(function($) {
 	// Toggle Auto Completion
 	$("#autocompletion").click( function() {
 		
-		if ($(this).is(':checked')){ autocompletion_active = true; } 
-		else { autocompletion_active = false; }
+		autocompletion_active = !!$(this).is(':checked');
 	}); 
 	
 	// Toggle Code Highlighting
@@ -388,7 +387,7 @@ jQuery(document).ready(function($) {
 			str = str.replace(/^\s+|\s+$/g,"");
 			
 			// Is this an unpaired tag?
-			unPaired = unPairedTags.inArray(str) ? true : false;
+			unPaired = unPairedTags.inArray(str);
 		
 			if(specialTags[str] != null && startingTag) {
 				

@@ -934,9 +934,9 @@ pullDown
 	animation-timing-function: ease-out;
 	-webkit-animation-timing-function: ease-out;
 
-	transform-origin: 50% 0%;
+	transform-origin: 50% 0;
 	-ms-transform-origin: 50% 0%;
-	-webkit-transform-origin: 50% 0%; 
+	-webkit-transform-origin: 50% 0;
 }
 
 @keyframes pullDown {
@@ -1003,9 +1003,9 @@ stretchLeft
 	animation-timing-function: ease-out;
 	-webkit-animation-timing-function: ease-out;
 
-	transform-origin: 100% 0%;
+	transform-origin: 100% 0;
 	-ms-transform-origin: 100% 0%;
-	-webkit-transform-origin: 100% 0%; 
+	-webkit-transform-origin: 100% 0;
 }
 
 @keyframes stretchLeft {
@@ -1072,9 +1072,9 @@ stretchRight
 	animation-timing-function: ease-out;
 	-webkit-animation-timing-function: ease-out;
 
-	transform-origin: 0% 0%;
+	transform-origin: 0 0;
 	-ms-transform-origin: 0% 0%;
-	-webkit-transform-origin: 0% 0%; 
+	-webkit-transform-origin: 0 0;
 }
 
 @keyframes stretchRight {

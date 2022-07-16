@@ -309,11 +309,9 @@ tinymce.PluginManager.add('noneditable', function(editor) {
 					}
 
 					// Check if the content node is within a non editable parent
-					if (getNonEditableParent(node)) {
-						return true;
-					}
+					return !!getNonEditableParent(node);
 
-					return false;
+
 				}
 
 				if (selection.isCollapsed()) {

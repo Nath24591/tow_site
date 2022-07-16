@@ -14,7 +14,7 @@
 		var availableClassesString = '';
 		for (var i = settings.breakpoints.length - 1; i >= 0; i--) {
 			availableClassesString += " " + "width-lt-" + settings.breakpoints[i] + " " + "width-gt-" + settings.breakpoints[i];
-		};
+		}
 
 		return this.each(function(){
 			var $this = jQuery(this);
@@ -26,7 +26,7 @@
 				} else {
 					newClassesString += ' width-gt-' + settings.breakpoints[i]
 				}
-			};
+			}
 			$this.addClass(newClassesString);
 
 			//processing window resize event
@@ -42,7 +42,7 @@
 					} else {
 						newClassesString += ' width-gt-' + settings.breakpoints[i]
 					}
-				};
+				}
 				$this.addClass(newClassesString);
 			});
 		});

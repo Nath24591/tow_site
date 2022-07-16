@@ -51,14 +51,10 @@
     var left = offset.left;
     var top = offset.top;
 
-    if (top + $element.height() >= window_top &&
+    return top + $element.height() >= window_top &&
         top - ($element.data('appear-top-offset') || 0) <= window_top + $window.height() &&
         left + $element.width() >= window_left &&
-        left - ($element.data('appear-left-offset') || 0) <= window_left + $window.width()) {
-      return true;
-    } else {
-      return false;
-    }
+        left - ($element.data('appear-left-offset') || 0) <= window_left + $window.width();
   }
 
   $.fn.extend({
@@ -94,7 +90,7 @@
       if (check_binded) {
         process();
         return true;
-      };
+      }
       return false;
     }
   });

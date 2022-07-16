@@ -158,7 +158,7 @@ function initAnimateElement(self, index) {
 
 function initCounter(self) {
 	if (self.hasClass('counted')) {
-		return;
+
 	} else {
 		self.countTo().addClass('counted');
 	}
@@ -906,7 +906,7 @@ function windowLoadInit() {
 					$carousel.find('.owl-item').length;
 					for (var i = $carousel.find('.owl-item').length - 1; i >= 0; i--) {
 						$carousel.trigger('remove.owl.carousel', [1]);
-					};
+					}
 
 					//adding new items
 					var $filteredItems = jQuery($carousel.next().find(' > ' +filterValue).clone());

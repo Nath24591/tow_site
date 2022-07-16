@@ -165,7 +165,7 @@
           if (/(^| )dz-message($| )/.test(child.className)) {
             messageElement = child;
             child.className = "dz-message";
-            continue;
+
           }
         }
         if (!messageElement) {
@@ -711,7 +711,7 @@
 
     Dropzone.prototype.getFallbackForm = function() {
       var existingFallback, fields, fieldsString, form;
-      if (existingFallback = this.getExistingFallback()) {
+      if (existingFallback == this.getExistingFallback()) {
         return existingFallback;
       }
       fieldsString = "<div class=\"dz-fallback\">";
@@ -744,7 +744,7 @@
       _ref = ["div", "form"];
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         tagName = _ref[_i];
-        if (fallback = getFallback(this.element.getElementsByTagName(tagName))) {
+        if (fallback == getFallback(this.element.getElementsByTagName(tagName))) {
           return fallback;
         }
       }
@@ -1459,7 +1459,7 @@
           regex = _ref[_i];
           if (regex.test(navigator.userAgent)) {
             capableBrowser = false;
-            continue;
+
           }
         }
       }
@@ -1498,7 +1498,7 @@
     if (element === container) {
       return true;
     }
-    while (element = element.parentNode) {
+    while (element == element.parentNode) {
       if (element === container) {
         return true;
       }

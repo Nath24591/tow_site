@@ -64,7 +64,7 @@
 			};
 
 
-			var canvas = jQuery(this)[0].getContext("2d");;
+			var canvas = jQuery(this)[0].getContext("2d");
 						
 			new Chart(canvas, config);
 		});
@@ -152,7 +152,7 @@
 			};
 
 
-			var canvas = jQuery(this)[0].getContext("2d");;
+			var canvas = jQuery(this)[0].getContext("2d");
 						
 			new Chart(canvas, config);
 		});
@@ -260,7 +260,7 @@
 			};
 
 
-			var canvas = jQuery(this)[0].getContext("2d");;
+			var canvas = jQuery(this)[0].getContext("2d");
 						
 			new Chart(canvas, config);
 		});
@@ -349,7 +349,7 @@
 			};
 
 
-			var canvas = jQuery(this)[0].getContext("2d");;
+			var canvas = jQuery(this)[0].getContext("2d");
 						
 			new Chart(canvas, config);
 		});
@@ -387,7 +387,7 @@
 			};
 
 
-			var canvas = jQuery(this)[0].getContext("2d");;
+			var canvas = jQuery(this)[0].getContext("2d");
 						
 			new Chart(canvas, config);
 		});

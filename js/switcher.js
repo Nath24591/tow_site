@@ -68,7 +68,7 @@ var switcherHTML = '<div id="switcher">';
 			switcherHTML +=    		    '</li>';
         	//available patterns
         	window.patternClasses.push('pattern' + i);
-		};
+		}
 
 		switcherHTML +=    		'</ul>';
 		switcherHTML +=    '</div>';
@@ -234,7 +234,7 @@ var switcherClass = {
 		//wide boxed changing
 	    jQuery("#boxed_margin").toggleClass("hidden").find("input").prop("checked", false);
 	    jQuery(".for-toggle").toggleClass("hidden");
-	    jQuery("#canvas").toggleClass("boxed").removeClass(patternClasses.join(' '));;
+	    jQuery("#canvas").toggleClass("boxed").removeClass(patternClasses.join(' '));
 	    jQuery("#box_wrapper").toggleClass("container").removeClass('top-bottom-margins');
 	    if (jQuery().isotope) {
 	    	jQuery("#isotopeContainer").isotope("reLayout");
