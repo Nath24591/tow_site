@@ -15,15 +15,15 @@
     <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <![endif]-->
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/main.css" id="color-switcher-link">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/main.css" id="color-switcher-link" rel="stylesheet">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
     <!--[if lt IE 9]>
@@ -46,25 +46,25 @@
 </div>
 
 <!-- search modal -->
-<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<div aria-labelledby="search_modal" class="modal" id="search_modal" role="dialog" tabindex="-1">
+    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
 			<span aria-hidden="true">
 				<i class="rt-icon2-cross2"></i>
 			</span>
     </button>
     <div class="widget widget_search">
-        <form method="get" class="searchform search-form form-inline" action="./">
+        <form action="./" class="searchform search-form form-inline" method="get">
             <div class="form-group">
-                <label for="modal-search-input"></label><input type="text" value="" name="search" class="form-control"
-                                                               placeholder="Search keyword" id="modal-search-input">
+                <label for="modal-search-input"></label><input class="form-control" id="modal-search-input" name="search" placeholder="Search keyword"
+                                                               type="text" value="">
             </div>
-            <button type="submit" class="theme_button">Search</button>
+            <button class="theme_button" type="submit">Search</button>
         </form>
     </div>
 </div>
 
 <!-- Unyson messages modal -->
-<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+<div class="modal fade" id="messages_modal" role="dialog" tabindex="-1">
     <div class="fw-messages-wrap ls with_padding">
         <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
         <!--
@@ -84,7 +84,7 @@
         <!-- template sections -->
 
         <section class="intro_section page_mainslider ds">
-            <img src="images/slide01.jpg" alt="">
+            <img alt="" src="images/slide01.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
@@ -92,15 +92,22 @@
                             <div class="slide_description">
                                 <div class="intro-layer to_animate" data-animation="fadeInUp">
                                     <p class="big grey">
-                                        we provide highest quality
+                                        <span class="logo_text">
+									<span class="highlight">24/7 Breakdown Recovery Hull</span>
+									<span>Towing Services</span>
+								</span>
                                         <br>
-                                        <strong class="highlight">towing services</strong>
                                     </p>
                                 </div>
                                 <div class="intro-layer to_animate" data-animation="fadeInUp">
                                     <p class="lightfont">
                                         Fast, courteous and inexpensive towing and
                                         <br> roadside assistance in Hull and surrounding areas.
+                                    </p>
+                                    <p>
+                                        <a class="social-icon theme-color-icon soc-facebook" href="#"></a>
+                                        <a class="social-icon theme-color-icon soc-google" href="#"></a>
+                                        <a class="social-icon theme-color-icon soc-linkedin" href="#"></a>
                                     </p>
                                 </div>
                             </div>
@@ -115,7 +122,7 @@
             <!-- eof .container -->
             <div class="scroll-icon greylinks">
                 <div class="to_animate" data-animation="floating">
-                    <a href="#about" class="to_animate" data-animation="floating">
+                    <a class="to_animate" data-animation="floating" href="#services">
                         <i class="towyicon-mouse grey"></i>
                         Scroll
                     </a>
@@ -129,8 +136,8 @@
             <div class="scrollbar-macosx">
                 <div class="side_header_inner">
                     <div class="text-center bottommargin_40">
-                        <a href="./" class="logo">
-                            <img src="images/logo.png" alt="">
+                        <a class="logo" href="./">
+                            <img alt="" src="images/logo.png">
                             <span class="logo_text">
 									<span class="highlight">24/7 Breakdown Recovery Hull</span>
 									<span>Towing Services</span>
@@ -142,33 +149,17 @@
                         <nav class="mainmenu_side_wrapper">
                             <ul class="nav menu-side-click">
                                 <li class="active">
-                                    <a href="index.html">Home</a>
+                                    <a href="#">Home</a>
                                 </li>
-                                <li>
-                                    <a href="#about">About</a>
-                                </li>
-                                <!-- eof pages -->
-
-                                <li>
-                                    <a href="#features">Features</a>
-                                </li>
-                                <!-- eof features -->
-                                <!-- services -->
                                 <li>
                                     <a href="#services">Services</a>
                                 </li>
-                                <!-- eof services -->
-                                <!-- gallery -->
                                 <li>
                                     <a href="#gallery">Gallery</a>
                                 </li>
-                                <!-- eof gallery -->
-
-                                <!-- FAQ -->
                                 <li>
-                                    <a href="#faq">FAQ</a>
+                                    <a href="#reviews">Reviews</a>
                                 </li>
-                                <!-- eof FAQ -->
                             </ul>
                         </nav>
                         <!-- eof main side nav -->
@@ -177,17 +168,17 @@
 
                     <div class="side_header_social topmargin_30">
 							<span>
-								<a href="#" class="social-icon color-bg-icon rounded-icon soc-facebook"></a>
-								<a href="#" class="social-icon color-bg-icon rounded-icon soc-twitter"></a>
-								<a href="#" class="social-icon color-bg-icon rounded-icon soc-google"></a>
+								<a class="social-icon color-bg-icon rounded-icon soc-facebook" href="#"></a>
+								<a class="social-icon color-bg-icon rounded-icon soc-twitter" href="#"></a>
+								<a class="social-icon color-bg-icon rounded-icon soc-google" href="#"></a>
 							</span>
                     </div>
 
                 </div>
             </div>
         </header>
-        <section id="contacts"
-                 class="ds columns_margin_0 columns_padding_0 table_section table_section_lg overflow-hidden">
+        <section class="ds columns_margin_0 columns_padding_0 table_section table_section_lg overflow-hidden"
+                 id="contacts">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-4 text-center">
@@ -251,7 +242,7 @@
             </div>
         </section>
 
-        <section id="services" class="ls section_padding_top_150 section_padding_bottom_120 columns_margin_0">
+        <section class="ls section_padding_top_150 section_padding_bottom_120 columns_margin_0" id="services">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
@@ -266,7 +257,7 @@
                     <div class="col-md-4">
                         <div class="with_padding">
                             <div class="teaser text-center">
-                                <img src="images/icons/towing.png" alt=""/>
+                                <img alt="" src="images/icons/towing.png"/>
                                 <h4 class="regular">
                                     Car Towing
                                 </h4>
@@ -278,23 +269,25 @@
                     <div class="col-md-4">
                         <div class="with_padding">
                             <div class="teaser text-center">
-                                <img src="images/icons/hail.png" alt=""/>
+                                <img alt="" src="images/icons/hail.png"/>
                                 <h4 class="regular">
                                     Jump start
                                 </h4>
                                 <p>Call us and get quick battery jump-start help from our roadside rescue vehicles.
-                                    Our mobile mechanics will safely jump-start your car and have you back on the road in no time.</p>
+                                    Our mobile mechanics will safely jump-start your car and have you back on the road
+                                    in no time.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="with_padding">
                             <div class="teaser text-center">
-                                <img src="images/icons/accident.png" alt=""/>
+                                <img alt="" src="images/icons/accident.png"/>
                                 <h4 class="regular">
                                     Accident Recovery
                                 </h4>
-                                <p>Accidents can happen no matter where you are. From hitting bumpers to small collisions and crashes,
+                                <p>Accidents can happen no matter where you are. From hitting bumpers to small
+                                    collisions and crashes,
                                     we provide nationwide vehicle recovery services.</p>
                             </div>
                         </div>
@@ -302,8 +295,8 @@
                     <div class="col-md-4">
                         <div class="with_padding">
                             <div class="teaser text-center">
-<!--                                <img src="images/icons/flood.png" alt=""/>-->
-                                <img src="images/icons/motocycle.png" alt=""/>
+                                <!--                                <img src="images/icons/flood.png" alt=""/>-->
+                                <img alt="" src="images/icons/motocycle.png"/>
                                 <h4 class="regular">
                                     Vehicle transportation
                                 </h4>
@@ -315,11 +308,12 @@
                     <div class="col-md-4">
                         <div class="with_padding">
                             <div class="teaser text-center">
-                                <img src="images/icons/fire.png" alt=""/>
+                                <img alt="" src="images/icons/fire.png"/>
                                 <h4 class="regular">
                                     Buying vehicles
                                 </h4>
-                                <p>We buy any cars, vans, bikes in any condition at any age, any make or model top price paid.</p>
+                                <p>We buy any cars, vans, bikes in any condition at any age, any make or model top price
+                                    paid.</p>
 
                             </div>
                         </div>
@@ -327,7 +321,7 @@
                     <div class="col-md-3">
                         <div class="with_padding">
                             <div class="teaser text-center">
-                                <img src="images/icons/motocycle.png" alt=""/>
+                                <img alt="" src="images/icons/motocycle.png"/>
                                 <h4 class="regular">
                                     Motorcycle Towing
                                 </h4>
@@ -339,7 +333,7 @@
             </div>
         </section>
 
-        <section id="gallery" class="ds section_padding_top_150 section_padding_bottom_130 columns_margin_bottom_20">
+        <section class="ds section_padding_top_150 section_padding_bottom_130 columns_margin_bottom_20" id="gallery">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
@@ -352,55 +346,55 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div id="gallery-owl-carousel" class="owl-carousel" data-dots="true" data-items="3"
-                             data-responsive-lg="3" data-responsive-md="2" data-responsive-sm="2"
-                             data-responsive-xs="1">
+                        <div class="owl-carousel" data-dots="true" data-items="3" data-responsive-lg="3"
+                             data-responsive-md="2" data-responsive-sm="2" data-responsive-xs="1"
+                             id="gallery-owl-carousel">
 
                             <div class="vertical-item content-padding gallery-extended-item with_border text-center">
                                 <div class="item-media">
-                                    <img src="images/gallery/recovery2.jpg" alt="">
+                                    <img alt="" src="images/gallery/recovery2.jpg">
                                     <div class="media-links"></div>
                                 </div>
                             </div>
 
                             <div class="vertical-item content-padding gallery-extended-item with_border text-center">
                                 <div class="item-media">
-                                    <img src="images/gallery/recovery3.jpg" alt="">
+                                    <img alt="" src="images/gallery/recovery3.jpg">
                                     <div class="media-links"></div>
                                 </div>
                             </div>
 
                             <div class="vertical-item content-padding gallery-extended-item with_border text-center">
                                 <div class="item-media">
-                                    <img src="images/gallery/recovery4.jpg" alt="">
+                                    <img alt="" src="images/gallery/recovery4.jpg">
                                     <div class="media-links"></div>
                                 </div>
                             </div>
 
                             <div class="vertical-item content-padding gallery-extended-item with_border text-center">
                                 <div class="item-media">
-                                    <img src="images/gallery/recovery5.jpg" alt="">
+                                    <img alt="" src="images/gallery/recovery5.jpg">
                                     <div class="media-links"></div>
                                 </div>
                             </div>
 
                             <div class="vertical-item content-padding gallery-extended-item with_border text-center">
                                 <div class="item-media">
-                                    <img src="images/gallery/recovery6.jpg" alt="">
+                                    <img alt="" src="images/gallery/recovery6.jpg">
                                     <div class="media-links"></div>
                                 </div>
                             </div>
 
                             <div class="vertical-item content-padding gallery-extended-item with_border text-center">
                                 <div class="item-media">
-                                    <img src="images/gallery/recovery7.jpg" alt="">
+                                    <img alt="" src="images/gallery/recovery7.jpg">
                                     <div class="media-links"></div>
                                 </div>
                             </div>
 
                             <div class="vertical-item content-padding gallery-extended-item with_border text-center">
                                 <div class="item-media">
-                                    <img src="images/gallery/recovery8.jpg" alt="">
+                                    <img alt="" src="images/gallery/recovery8.jpg">
                                     <div class="media-links"></div>
                                 </div>
                             </div>
@@ -410,14 +404,15 @@
             </div>
         </section>
 
-        <section class="ls background_cover page_testimonials section_padding_50">
+        <section class="ls background_cover page_testimonials section_padding_50" id="reviews">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="owl-carousel" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1"
-                             data-nav="true" data-margin="0">
+                        <div class="owl-carousel" data-margin="0" data-nav="true" data-responsive-lg="1"
+                             data-responsive-md="1" data-responsive-sm="1">
                             <blockquote>
-                                <img src="images/faces/01.jpg" alt=""/> Great service at last minute if you want someone reliable
+                                <img alt="" src="images/faces/01.jpg"/> Great service at last minute if you want someone
+                                reliable
                                 who actually turns up to do the job them look no further.
                                 lots of messes through Facebook pages Craig is genuine and a fair price.
                                 Will be using his again if I need any recovers or buy any more
@@ -428,7 +423,8 @@
                             </blockquote>
 
                             <blockquote>
-                                <img src="images/faces/02.jpg" alt=""/> Thankyou for collecting my new car from Thrisk today.
+                                <img alt="" src="images/faces/02.jpg"/> Thankyou for collecting my new car from Thrisk
+                                today.
                                 Great service. Would use again.
                                 <div class="item-meta lightfont">
                                     <h5 class="highlight">Chelsea Scott</h5>
@@ -436,138 +432,13 @@
                             </blockquote>
 
                             <blockquote>
-                                <img src="images/faces/02.jpg" alt=""/> Top man, got the job done, made the impossible possible.
+                                <img alt="" src="images/faces/02.jpg"/> Top man, got the job done, made the impossible
+                                possible.
                                 Anyone who wants a proper recovery man, this is your guy.
                                 <div class="item-meta lightfont">
                                     <h5 class="highlight">Jade Marie Holmes</h5>
                                 </div>
                             </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="faq"
-                 class="ls section_padding_top_150 section_padding_bottom_130 columns_margin_bottom_30 table_section table_section_md">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h2 class="section_header numbered-header">General
-                            <strong>FAQ'S</strong>
-                        </h2>
-                        <p class="small-text">Relocation of any vehicle type</p>
-                        <hr class="divider_30_3 zebra_bg divider_left">
-
-                        <div class="panel-group topmargin_60 bottommargin_0" id="accordion1">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapse1">
-                                            Lorem Ipsum
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse1" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium amet ea
-                                        dicta neque, ut quis omnis quos nam, pariatur, minus, fugit suscipit aspernatur
-                                        sint ullam quas explicabo. Alias, officiis, dolor!
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapse2"
-                                           class="collapsed">
-                                            Dolor Sit Amet
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse2" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem facere
-                                        doloremque ut dolores laudantium nihil at, repudiandae est numquam fuga tempora
-                                        totam sequi quidem saepe officiis sint beatae, magni fugit.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapse3"
-                                           class="collapsed">
-                                            Corporis Iste
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse3" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At nobis omnis
-                                        delectus, asperiores quo obcaecati et iste corporis necessitatibus tempora
-                                        aspernatur doloribus. Ut deleniti commodi dicta distinctio sit enim quidem!
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapse4"
-                                           class="collapsed">
-                                            Adipisicing Elit
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse4" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At nobis omnis
-                                        delectus, asperiores quo obcaecati et iste corporis necessitatibus tempora
-                                        aspernatur doloribus. Ut deleniti commodi dicta distinctio sit enim quidem!
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="ds columns_margin_0 columns_padding_0 table_section table_section_lg">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 text-center with_skew_bg skew_right main_bg_color cs">
-                        <div class="with_icon_bg with_padding_small">
-                            <i class="fa fa-envelope background-icon"></i>
-                            <h3 class="text-uppercase grey margin_0">
-                                register for
-                                <strong>our newsletter</strong>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <div class="with_padding_small">
-                            <div class="content-justify vertical-center">
-                                <h3 class="text-uppercase highlight margin_0">
-                                    enter
-                                    <strong>e-mail address</strong>
-                                </h3>
-                                <a href="#" class="theme_button round_button color1 margin_0">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-center with_skew_bg skew_left main_bg_color cs">
-                        <div class="with_icon_bg with_padding_small">
-                            <i class="towyicon-newspaper background-icon"></i>
-                            <h3 class="text-uppercase grey margin_0">
-                                get latest
-                                <strong>company news</strong>
-                            </h3>
                         </div>
                     </div>
                 </div>
@@ -581,19 +452,17 @@
 
                     <div class="col-md-4 col-sm-6 to_animate" data-animation="fadeInUp">
 
-                        <a href="./" class="logo">
-                            <img src="images/logo.png" alt="">
+                        <a class="logo" href="./">
+                            <img alt="" src="images/logo.png">
                             <span class="logo_text">
 									<span class="highlight">24/7 Breakdown Recovery Hull</span>
 									<span>Towing Services</span>
 								</span>
                         </a>
                         <p>
-                            <a href="#" class="social-icon theme-color-icon soc-twitter"></a>
-                            <a href="#" class="social-icon theme-color-icon soc-facebook"></a>
-                            <a href="#" class="social-icon theme-color-icon soc-google"></a>
-                            <a href="#" class="social-icon theme-color-icon soc-linkedin"></a>
-                            <a href="#" class="social-icon theme-color-icon soc-pinterest"></a>
+                            <a class="social-icon theme-color-icon soc-facebook" href="#"></a>
+                            <a class="social-icon theme-color-icon soc-google" href="#"></a>
+                            <a class="social-icon theme-color-icon soc-linkedin" href="#"></a>
                         </p>
 
                     </div>
@@ -639,7 +508,7 @@
                 <div class="row">
                     <div class="col-sm-12 text-center">
                         <p class="lightfont">24/7 Breakdown Recovery Hull
-                            <i class="fa fa-heart highlight" aria-hidden="true"></i> All Rights Reserved &copy; 2022</p>
+                            <i aria-hidden="true" class="fa fa-heart highlight"></i> All Rights Reserved &copy; 2022</p>
                     </div>
                 </div>
             </div>
