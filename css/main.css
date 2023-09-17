@@ -12793,6 +12793,7 @@ a[class*='soc-']:before {
 }
 
 a.social-icon {
+    padding: 8px;
 	font-size: 0;
 	line-height: 0;
 	display: inline-block;
